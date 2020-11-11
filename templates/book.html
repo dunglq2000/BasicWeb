@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя библиотека</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+	<h1 align="center" id="home">Самая большая книжная библиотека</h1>
+    {% include "header.html" %}
+    <div class="container mt-3">
+        <p><strong>Информация книги</strong></p>
+        <table class="table table-bordered">
+            <tr class="bg-primary">
+                <td><p>Название</p></td>
+                <td><p>Автор</p></td>
+                <td><p>Категория</p></td>
+                <td><p>Сколько свободных</p></td>
+            </tr>
+            {% for book in books %}
+            <tr class="bg-light">
+                <td><p>{{ book.name }}</p></td>
+                <td><p>{{ book.author }}</p></td>
+                <td><p>{{ book.category }}</p></td>
+                <td><p>{{ book.free }}</p></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

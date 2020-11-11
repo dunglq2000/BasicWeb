@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя библиотека</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+	<h1 align="center" id="home">Самая большая книжная библиотека</h1>
+    {% include "header.html" %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide container mt-3" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+                <img src="{{ url_for('static', filename='DaNang.jpg') }}" class="rounded mx-auto d-block w-80">
+            </div>
+          <div class="carousel-item" data-interval="2000">
+            <img src="{{ url_for('static', filename='NhaTrang1.jpg') }}" class="rounded mx-auto d-block w-80">
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <img src="{{ url_for('static', filename='nhatrang2.jpg') }}" class="rounded mx-auto d-block w-80">
+          </div>
+        </div>
+      </div>
+    <div class="container border bg-light mt-3">
+        <form method="POST" class="pb-3 pt-1">
+            <div class="form-row">
+                <div class="col-sm-4"><label>Какую книгу вы хотите найти?</label></div>
+                <div class="col-sm-2"><label>Фильтры</label></div>
+            </div>
+            <div class="form-row">
+                <div class="col-sm-4"><input type="text" class="form-control" placeholder="Ввод название книги здесь" name="book"></div>
+                <div class="col-sm-2">
+                    <select class="custom-select">
+                        <option value="1">название</option>
+                        <option value="2">Автор</option>
+                        <option value="3">Сатегория</option>
+                    </select>
+                </div>
+                <div class="col-sm-2"><button type="submit" class="btn btn-primary">Найти</button></div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="container mt-3">
+        <div class="row ">
+            <div class="col-sm-4 border bg-light">
+                <b style="font-size: 20px; color: green;">Открыто</b>
+                <p>Понедельник - Суботта: 9:00 - 18:00</p>
+                <p>Воскресенье: не работаем</p>
+            </div>
+            <div class="col-sm-8 border bg-light">
+                <b style="font-size: 20px; color: green;">Новости</b>
+                {% for i in news %}
+                <p> {{ i["title"] }}</p>
+                {% endfor %}
+            </div>
+        </div> 
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

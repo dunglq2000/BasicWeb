@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Деятельности Библиотеки</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1 align="center" id="home">Деятельности библиотека</h1>
+    {% include "header.html" %}
+    <div class="container">
+        {% for n in news %}
+        <p style="font-size: 20px;">{{ n.title }} - {{ n.date }} </p>
+        {% endfor %}
+    
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

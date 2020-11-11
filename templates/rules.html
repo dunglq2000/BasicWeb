@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Правила библиотеки</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1 align="center" id="home">Правила</h1>
+    {% include "header.html" %}
+    <div class="container mt-3">
+        <p class="alert alert-info"><strong>Правила бибблиотеки</strong></p>
+        <div class="container">
+            <ol>
+                <li>Не рвать книги</li>
+                <li>Можно взять максимально 3 книги одновременно</li>
+                <li>Нужно венуться книги после 3 мецяса</li>
+                <li>Не продавать книги библиотеки</li>
+            </ol>
+        </div>
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

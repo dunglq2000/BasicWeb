@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вступление</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1 align="center" id="home">Вступление</h1>
+    {% include "header.html" %}
+    <div class="container mt-3">
+        <div class="container">
+            <p class="alert alert-info"><strong>Общее введение</strong></p>
+            <ul>
+                <li>Мы обеспечиваем ресусы для исследовании, студентов, магистранов в унивеситетах</li>
+                <li>Здесь есть много соввременных устройств, чтобы быстро и хорошо найти документы</li>
+                <li>У нас есть ссылки на другие библиотеки</li>
+            </ul>
+        </div>
+        <div class="container mt-3">
+            <p class="alert alert-info"><strong>Структура</strong></p>
+            <ul>
+                <li>Директор</li>
+                <li>Заместитель директора</li>
+                <li>Инженеры</li>
+            </ul>
+        </div>
+
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>
