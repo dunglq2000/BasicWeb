@@ -5,8 +5,8 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-	<h1 align="center" id="home">Самая большая книжная библиотека</h1>
     {% include "header.html" %}
+    <h1 class="container" align="center" id="home">Самая большая книжная библиотека</h1>
     <div id="carouselExampleSlidesOnly" class="carousel slide container mt-3" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="2000">
@@ -49,9 +49,16 @@
             </div>
             <div class="col-sm-8 border bg-light">
                 <b style="font-size: 20px; color: green;">Новости</b>
-                {% for i in news %}
-                <p> {{ i["title"] }}</p>
-                {% endfor %}
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        {% for i in news %}
+                        <p style="font-size: larger;"><u> {{ i["title"] }}</u></p>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                
             </div>
         </div> 
     </div>

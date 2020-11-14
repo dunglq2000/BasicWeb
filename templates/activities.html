@@ -5,13 +5,18 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-    <h1 align="center" id="home">Деятельности библиотека</h1>
     {% include "header.html" %}
+    <h1 class="container" align="center" id="home">Деятельности библиотека</h1>
     <div class="container">
-        {% for n in news %}
-        <p style="font-size: 20px;">{{ n.title }} - {{ n.date }} </p>
-        {% endfor %}
-    
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+                {% for n in news %}
+                <u style="font-size: 24px;"><strong>{{ n.title }}</strong></u>
+                <p style="font-size: 18px;">{{ n.date }} </p>
+                {% endfor %}
+            </div>
+        </div>
     </div>
     {% include "footer.html" %}
 </body>

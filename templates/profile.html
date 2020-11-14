@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Войти</title>
+</head>
+<body>
+    {% include "header.html" %}
+    <h1 class="containter" align="center">Профиль {{ user.firstname }} {{ user.lastname }}</h1>
+    <div class="container mt-3">
+        <div class="row rounded">
+            <div class="col-sm-4 border rounded"><p style="font-size: 20px; color: green"><strong>Имя</strong></p></div>
+            <div class="col-sm-4 border rounded"><p style="font-size: 20px; color: green"><strong>Фамилия</strong></p></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 border"><p style="font-size: 20px;">{{ user.firstname }}</p></div>
+            <div class="col-sm-4 border"><p style="font-size: 20px;">{{ user.lastname }}</p></div>
+        </div>
+    </div>
+    <div class="container">
+        {% if books|length == 0 %}
+        <i>Использователь не взял ни одной книги</i>
+        {% else %}
+        {% block content %}
+        <table class="table table-bordered mt-4">
+            <tr class="bg-primary">
+                <td><p>Название книг</p></td>
+                <td><p>Дата взял</p></td>
+                <td><p>Дата надо вернуться</p></td>
+            </tr>
+            {% for book in books %}
+            <tr class="bg-light">
+                <td><p>{{ book.name }}</p></td>
+                <td><p>{{ book.take }}</p></td>
+                <td><p>{{ book.ret }}</p></td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endblock content %}
+        {% endif %}
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>

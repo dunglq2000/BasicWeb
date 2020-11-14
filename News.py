@@ -5,32 +5,20 @@ class News():
 
 data = [
     {
-        "title": "Welcome to my library",
-        "date": "12/11/2020",
+        "title": "Библиотека открыто",
+        "date": "10/11/2020",
     },
     {
-        "title": "Welcome to my library again",
-        "date": "13/11/2020"
-    },
-    {
-        "title": "Welcome to my library again again",
-        "date": "14/11/2020"
-    },
-    {
-        "title": "Welcome to my library again again again",
-        "date": "15/11/2020"
-    },
-    {
-        "title": 'Hello World', 
-        "date": '10/11/2020'
-    },
-    {
-        "title": 'Фестивал ноября', 
+        "title": 'Купить новые книги', 
         "date": '11/11/2020'
     },
     {
-        "title": 'Фестивал декабря',
+        "title": 'Фестивал ноября', 
         "date": '12/11/2020'
+    },
+    {
+        "title": 'Фестивал декабря',
+        "date": '12/12/2020'
     }
 ]
 news = [News(d["title"], d["date"]) for d in data]

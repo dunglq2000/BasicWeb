@@ -5,16 +5,22 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-    <h1 align="center" id="home">Правила</h1>
     {% include "header.html" %}
+    <h1 class="container" align="center" id="home">Правила</h1>
     <div class="container mt-3">
-        <p class="alert alert-info"><strong>Правила бибблиотеки</strong></p>
+        <p class="alert alert-info"><strong>Правила библиотеки</strong></p>
         <div class="container">
             <ol>
                 <li>Не рвать книги</li>
                 <li>Можно взять максимально 3 книги одновременно</li>
                 <li>Нужно венуться книги после 3 мецяса</li>
                 <li>Не продавать книги библиотеки</li>
+                <li>Не шуметь в библиотеке</li>
+                <li>Не курить в библиотеке</li>
+                <li>животное должно быть снаружи</li>
+                <img src="{{ url_for('static', filename='noise.jpg') }}">
+                <img src="{{ url_for('static', filename='nosmoking.png') }}">
+                <img src="{{ url_for('static', filename='noanimal.png') }}">"
             </ol>
         </div>
     </div>
