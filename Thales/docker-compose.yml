@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  thales:
+    build: .
+    ports:
+      - "5085:80"
+  
+  node:
+    image: node
+    entrypoint: sleep 9999999
+    volumes:
+      - "./frontend:/frontend"

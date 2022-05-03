@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "26OdNX5BO6VY6D+gCrquhW/4GuGygHfjM/fb9fPKyrE=",
+  "Source": "Thales",
+  "BasePath": "_content/Thales",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Thales\\wwwroot",
+      "Source": "Thales",
+      "ContentRoot": "E:\\Thales\\Thales\\wwwroot\\",
+      "BasePath": "_content/Thales",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Thales\\Thales\\wwwroot\\assets\\index.48f7964e.js",
+      "SourceId": "Thales",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Thales\\Thales\\wwwroot\\",
+      "BasePath": "_content/Thales",
+      "RelativePath": "assets/index.48f7964e.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index.48f7964e.js"
+    },
+    {
+      "Identity": "E:\\Thales\\Thales\\wwwroot\\assets\\index.abc07aea.css",
+      "SourceId": "Thales",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Thales\\Thales\\wwwroot\\",
+      "BasePath": "_content/Thales",
+      "RelativePath": "assets/index.abc07aea.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index.abc07aea.css"
+    },
+    {
+      "Identity": "E:\\Thales\\Thales\\wwwroot\\favicon.ico",
+      "SourceId": "Thales",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Thales\\Thales\\wwwroot\\",
+      "BasePath": "_content/Thales",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Thales\\Thales\\wwwroot\\index.html",
+      "SourceId": "Thales",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Thales\\Thales\\wwwroot\\",
+      "BasePath": "_content/Thales",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
